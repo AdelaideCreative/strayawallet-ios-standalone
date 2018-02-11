@@ -232,7 +232,7 @@ class ModalPresenter : Subscriber, Trackable {
         }
     }
 
-    private func makeSendView() -> UIViewController? {
+     private func makeSendView() -> UIViewController? {
         guard !store.state.walletState.isRescanning else {
             let alert = UIAlertController(title: S.Alert.error, message: S.Send.isRescanning, preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: S.Button.ok, style: .cancel, handler: nil))
