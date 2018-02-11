@@ -64,7 +64,19 @@ static const char *dns_seeds[] = {
 // blockchain checkpoints - these are also used as starting points for partial chain downloads, so they need to be at
 // difficulty transition boundaries in order to verify the block difficulty at the immediately following transition
 static const struct { uint32_t height; const char *hash; uint32_t timestamp; uint32_t target; } checkpoint_array[] = {
-    { 0, "f40e7646b3d251766a184024ebc024035edae584e0694dc875edc9757e267af5", 1516943825, 0x1e0ffff0 }
+    {  2015, "375a8b073441077ba3f2637915c03a9936448aea7b97fa0bfb4fe00bf8eeb448", 1517305369, 0x1e0ffff0},
+    {  4031, "a5f52d5b6749ceec4985c406cb40c2361ce5fa03684b860da6c34e8afb4765b3", 1517324733, 0x1e0fffff},
+    {  6047, "e17fd5934dd6694d4a29ce149023eb934997b386e7316aed7f76a1bb365a3648", 1517350554, 0x1e03ffff},
+    {  8063, "194bb1e363b444fed5a09105b0f3f1c9d18493568c299b77e18c5926e89f036a", 1517366909, 0x1e00ffff},
+    { 10079, "d08584f43a4d745d9470a9a6182328e57bc5ae2cd0a914acac813c84585affe1", 1517398277, 0x1d3fffc0},
+    { 12095, "9642cab8334b2ae9eb3d0ac369ba5e01c1a99039ca4ed34ee80ef23f37fcd2b9", 1517426907, 0x1d0ffff0},
+    { 14111, "597823312899b4ae85282f3de75a5464de165ffdd451e6cf1a121a73e412f45f", 1517437395, 0x1d03fffc},
+    { 16127, "99b48e47f0d78ca262f93fbc64cf94a51306061d0cf4fe94bb0e82ade37d8204", 1517445540, 0x1d00ffff},
+    { 18143, "0a73a9ddf9c24e997886bf5c3cb9e7e39e04136cb4348978650dab78d94677ce", 1517460294, 0x1c3fffc0},
+    { 20159, "bb2b1312bba6e36241166b388385b798c3925e4216ea8be0a914e563ff534cba", 1517491433, 0x1c0ffff0},
+    { 22175, "5d7eb1af602b40ad02f0d76f127a2a30bbbc4eb59d10a3d88657675c66110419", 1517535066, 0x1c03fffc},
+    { 26207, "259cb34167998394959091a46895f4e8400382d313cb93564e599101695d8b0d", 1517814811, 0x1b6bacca},
+    { 28223, "72e8e714e321515bfd41679ada0ff62897232b9aa52a0744f4e3c3a0f40d2767", 1517957489, 0x1b3651a2}
 };
 
 static const char *dns_seeds[] = {

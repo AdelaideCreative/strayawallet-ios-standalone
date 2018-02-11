@@ -83,7 +83,8 @@ class AboutViewController : UIViewController {
             myself.presentURL(string: "https://www.strayawallet.com")
         }
         twitter.button.tap = strongify(self) { myself in
-            myself.presentURL(string: "https://www.strayawallet.com/donate")
+            myself.presentURL(string: "strayacoin://SjGUHHNjMA4eoTRpXjEvqgLx8xzqAUcNWw")
+            
         }
         reddit.button.tap = strongify(self) { myself in
             myself.presentURL(string: "https://reddit.com/r/strayacoin/")
@@ -97,4 +98,5 @@ class AboutViewController : UIViewController {
         let vc = SFSafariViewController(url: URL(string: string)!)
         self.present(vc, animated: true, completion: nil)
     }
+
 }
